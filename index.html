@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <meta name="description" content="here you can write your list to do">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="todo-header">
+    <h1>To Do List</h1>
+  </header>
+  <section class="main-container">
+    <div class="form-container">
+      <form class="form">
+        <input class="form__input" type="text">
+        <button class="form__add-btn" type="submit">
+          <i class="fa-solid fa-circle-plus"></i>
+        </button>
+      </form>
+      <div class="select">
+        <select name="form-cat" class="form__category">
+          <option value="all">all</option>
+          <option value="completed">completed</option>
+          <option value="uncompleted">uncompleted</option>
+        </select>
+      </div>
+    </div>
+    <div class="todos-container"></div>
+
+  </section>
+  <script src="/index.js"></script>
+</body>
+</html>
